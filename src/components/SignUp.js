@@ -42,14 +42,6 @@ const SignUp = () => {
     }
   };
 
-  // return (
-  //   <form onSubmit={handleSignUp}>
-  //   <h1>Sign Up</h1>
-  //     <input type="email" placeholder="Email" onChange={(e) => setEmail(e.target.value)} />
-  //     <input type="password" placeholder="Password" onChange={(e) => setPassword(e.target.value)} />
-  //     <button type="submit">Sign Up</button>
-  //   </form>
-  // );
 
 return (
  <ThemeProvider theme={theme}>
