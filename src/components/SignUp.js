@@ -7,6 +7,7 @@ import TextField from '@mui/material/TextField';
 import FormControlLabel from '@mui/material/FormControlLabel';
 import Checkbox from '@mui/material/Checkbox';
 import Link from '@mui/material/Link';
+import { Link as MyLink } from 'react-router-dom';
 import Grid from '@mui/material/Grid';
 import Box from '@mui/material/Box';
 import Typography from '@mui/material/Typography';
@@ -15,10 +16,10 @@ import { createTheme, ThemeProvider } from '@mui/material/styles';
 
 function Copyright(props) {
   return (
-    <Typography variant="body2" color="text.secondary" align="center" {...props}>
+    <Typography id="copyright" variant="body2" color="text.secondary" align="center" {...props}>
       {'Copyright © '}
-      <Link color="inherit" href="https://mui.com/">
-        WCSS
+      <Link id="link" color="inherit" href="https://mui.com/">
+        Project WCSS - Company X
       </Link>{' '}
       {new Date().getFullYear()}
       {'.'}
@@ -45,7 +46,7 @@ const SignUp = () => {
 
 return (
  <ThemeProvider theme={theme}>
-      <Container component="main" maxWidth="xs">
+      <Container id="container"component="main" maxWidth="xs">
         <CssBaseline />
         <Box
           sx={{
@@ -55,8 +56,8 @@ return (
             alignItems: 'center',
           }}
         >
-          <Typography component="h1" variant="h5">
-            Sign Up
+          <Typography component="h2" variant="h5" id="create">
+            Create Your New Company X Account.
           </Typography>
           <Box component="form" onSubmit={handleSignUp} noValidate sx={{ mt: 1 }}>
             <TextField
@@ -79,28 +80,24 @@ return (
               id="password"
               autoComplete="current-password"
             />
-            <FormControlLabel
-              control={<Checkbox value="remember" color="primary" />}
-              label="Remember me"
-            />
+            
             <Button
+              id="muibtn"
               type="submit"
               fullWidth
               variant="contained"
               sx={{ mt: 3, mb: 2 }}
             >
-              Sign In
+              CREATE ACCOUNT
             </Button>
+            
+
             <Grid container>
               <Grid item xs>
-                <Link href="#" variant="body2">
-                  Forgot password?
-                </Link>
+                <Button id="backbtn">Back to Home</Button>
               </Grid>
               <Grid item>
-                <Link href="#" variant="body2">
-                  {"Have an account? Sign In"}
-                </Link>
+               <Button id="signinbtn">Already have an account? Sign in.</Button>
               </Grid>
             </Grid>
           </Box>

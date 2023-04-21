@@ -1,3 +1,6 @@
+@import url('https://fonts.googleapis.com/css2?family=Righteous&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@700&display=swap');
+
 .App {
   text-align: center;
 }
@@ -36,3 +39,188 @@
     transform: rotate(360deg);
   }
 }
+
+#main {
+  background: linear-gradient(to bottom, #323232 0%, #3F3F3F 40%, #1C1C1C 150%), linear-gradient(to top, rgba(255,255,255,0.40) 0%, rgba(0,0,0,0.25) 200%);
+ background-blend-mode: multiply;
+}
+
+h2, h3 {
+  text-align: center;
+  color: #fff;
+  font-family: 'Roboto Mono', monospace;
+}
+
+#container {
+  background-color: black;
+
+  border: 10px solid;
+  border-image-slice: 1;
+  border-width: 7px;
+  border-image-source: linear-gradient(to left, #743ad5, #d53a9d);
+  box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
+
+}
+
+
+#email, #password {
+  background-color: #999;
+/*  border-radius: 5px;*/
+  color: #000;
+}
+
+#rememberme {
+  color: white;
+}
+
+.FormControlLabel {
+  background-color: white;
+}
+
+#create {
+  font-family: 'Roboto Mono', monospace;
+  text-align: center;
+  font-size: 25px;
+  color: #fff;
+  padding: 0;
+}
+
+#muibtn {
+  background-image: linear-gradient(to top, #0ba360 0%, #3cba92 100%);
+}
+
+#link {
+  color: #fff;
+  text-decoration: underline;
+}
+
+#copyright {
+  color: #fff;
+  padding-bottom: 20px;
+}
+
+#forgotbtn, #signinbtn, #backbtn {
+  font-size: 0.75em;
+  color: #fff;
+}
+
+#muibtn, #forgotbtn, #signinbtn, #backbtn {
+  border-radius: 0;
+}
+
+#forgotbtn {
+  background-image: linear-gradient(to top, #d62121 0%, #c72c2c 100%);
+}
+
+#signinbtn {
+  background-image: linear-gradient(to top, #205e9b 0%, #0575e6 100%);
+}
+
+#backbtn {
+  background-image: linear-gradient(to top, #d62121 0%, #c72c2c 100%);
+}
+
+/* App.js */
+
+#welcome {
+  text-align: center;
+  color: #fff;
+  font-size: 7em;
+  font-family: 'Roboto Mono', monospace;
+  background: -webkit-linear-gradient(#eee, #333);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+/* SignUp.js */
+
+
+/* Login.js */
+
+/* Navbar.js */
+
+#header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: linear-gradient(15deg, #d53a9d 0%,  #743ad5 100%);
+  padding: 0px 80px;
+  box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
+}
+
+#navbar {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#navbar li {
+  list-style: none;
+  padding: 0 20px;
+  position: relative;
+}
+
+#navbar li a {
+  text-decoration: none;
+  font-size: 1rem;
+  font-weight: 600;
+  color: #fff;
+  transition: 0.3s ease-in-out;
+  font-family: 'Roboto Mono', monospace;
+}
+
+#navbar li a:hover,
+#navbar li a.active {
+  color: #17cf97;
+}
+
+#navbar li a:hover::after,
+#navbar li a.active::after {
+  content: "";
+  width: 30%;
+  height: 2px;
+  background: #17cf97;
+  position: absolute;
+  bottom: -4px;
+  left: 20px;
+}
+
+
+
+h1 {
+  color: #ffffff;
+  font-weight: 600;
+  font-family: 'Righteous', cursive;
+  font-size: 2rem;
+}
+
+/* Table.jsx */
+
+#employeetable {
+  width: 50%;
+  margin: 0 auto;
+  text-align: center;
+  background-color: black;
+   box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
+}
+
+#tablecell {
+  color: white;
+}
+
+/* Footer.js */
+
+#footer {
+  background-color: black;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0px 80px;
+  box-shadow: rgba(0, 0, 0, 0.3) 0px -19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
+
+}
+
+
+
+
+

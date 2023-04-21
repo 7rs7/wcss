@@ -11,6 +11,7 @@ import TextField from '@mui/material/TextField';
 import FormControlLabel from '@mui/material/FormControlLabel';
 import Checkbox from '@mui/material/Checkbox';
 import Link from '@mui/material/Link';
+import { Link as MyLink } from 'react-router-dom';
 import Grid from '@mui/material/Grid';
 import Box from '@mui/material/Box';
 import Typography from '@mui/material/Typography';
@@ -19,10 +20,10 @@ import { createTheme, ThemeProvider } from '@mui/material/styles';
 
 function Copyright(props) {
   return (
-    <Typography variant="body2" color="text.secondary" align="center" {...props}>
+    <Typography id="copyright" variant="body2" color="text.secondary" align="center" {...props}>
       {'Copyright © '}
       <Link color="inherit" href="https://mui.com/">
-        WCSS
+        Project WCSS - Company X
       </Link>{' '}
       {new Date().getFullYear()}
       {'.'}
@@ -58,7 +59,7 @@ const Login = () => {
 
 return (
  <ThemeProvider theme={theme}>
-      <Container component="main" maxWidth="xs">
+      <Container id="container" component="main" maxWidth="xs">
         <CssBaseline />
         <Box
           sx={{
@@ -68,8 +69,8 @@ return (
             alignItems: 'center',
           }}
         >
-          <Typography component="h1" variant="h5">
-            Login
+          <Typography component="h2" variant="h5" id="create">
+            Log in to your Company X Account.
           </Typography>
           <Box component="form" onSubmit={handleLogin} noValidate sx={{ mt: 1 }}>
             <TextField
@@ -92,28 +93,21 @@ return (
               id="password"
               autoComplete="current-password"
             />
-            <FormControlLabel
-              control={<Checkbox value="remember" color="primary" />}
-              label="Remember me"
-            />
             <Button
+              id="muibtn"
               type="submit"
               fullWidth
               variant="contained"
               sx={{ mt: 3, mb: 2 }}
             >
-              Sign In
+              LOG IN
             </Button>
             <Grid container>
               <Grid item xs>
-                <Link href="#" variant="body2">
-                  Forgot password?
-                </Link>
+                <Button id="forgotbtn">Forgot Password?</Button>
               </Grid>
               <Grid item>
-                <Link href="#" variant="body2">
-                  {"Don't have an account? Sign Up"}
-                </Link>
+                <Button id="signinbtn">Don't have an account? Sign up.</Button>
               </Grid>
             </Grid>
           </Box>
